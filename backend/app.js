@@ -1,11 +1,14 @@
+// importing server
 const express = require("express");
 const app = express();
+// middleware for parsing the cookie request
 const cookieParser = require("cookie-parser");
 const path = require("path");
+// declaring the config file path
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config({ path: "backend/config/config.env" });
 }
-
+// 
 // Using Middlewares
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ limit: "50mb", extended: true }));

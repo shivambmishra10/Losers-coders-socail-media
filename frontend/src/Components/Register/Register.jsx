@@ -11,7 +11,6 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [avatar, setAvatar] = useState("");
   const [password, setPassword] = useState("");
-
   const dispatch = useDispatch();
   const alert = useAlert();
   const { loading, error } = useSelector((state) => state.user);

@@ -174,7 +174,7 @@ exports.updatePassword = async (req, res) => {
         message: "Incorrect Old password",
       });
     }
-
+    
     user.password = newPassword;
     await user.save();
 

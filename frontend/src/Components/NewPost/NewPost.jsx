@@ -12,7 +12,7 @@ const NewPost = () => {
   const { loading, error, message } = useSelector((state) => state.like);
   const dispatch = useDispatch();
   const alert = useAlert();
-
+  // here image is set
   const handleImageChange = (e) => {
     const file = e.target.files[0];
 

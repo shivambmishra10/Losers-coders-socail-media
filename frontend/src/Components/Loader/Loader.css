@@ -13,6 +13,7 @@
   border-top: 10px solid rgb(34, 34, 34);
   border-bottom: 10px solid rgb(32, 23, 23);
   animation: loading 1s linear infinite;
+  
 }
 
 @keyframes loading {
